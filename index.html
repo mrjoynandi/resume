@@ -9,21 +9,114 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
+        body{
+            background-color: rgb(3, 14, 3);
+        }
+        header{
+            background-color: navy;
+        }
+        .nav-item{
+            color: navy;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
         .section-heading {
             color: blue;
             font-weight: normal; /* Set to normal */
             text-align: left;
             margin-bottom: 1rem;
         }
+        header{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        h1{
+            font-family: 'Montserrat', sans-serif; /* Default font */
+            margin: 20px;
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+        }
+        #wm{
+            font-family: 'Dancing Script', cursive;
+        }
+        .social{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            /* height: 100vh; Full height */
+            display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            /* background-color: #f0f0f0; Optional background color */
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px; /* Space between buttons */
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px; /* Set width for the button */
+            height: 30px; /* Set height for the button */
+            border-radius: 50%; /* Make it circular */
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s;
+            font-size: 20px; /* Adjust icon size */
+        }
+        .contact-item:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+        .phone {
+            background: linear-gradient(90deg, #FF7E5F, #FEB47B); /* Gradient for phone button */
+        }
+        .email {
+            background: linear-gradient(90deg, #43C6AC, #F8FFAE); /* Gradient for email button */
+        }
+        .linkedin {
+            background: linear-gradient(90deg, #0072b1, #00a6ff); /* Gradient for LinkedIn button */
+        }
+        .facebook {
+            background: linear-gradient(90deg, #3b5998, #8b9dc3); /* Gradient for Facebook button */
+        }
     </style>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
+    
+    <header class="text-white text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 d-flex flex-column align-items-center">
+                    <img src="https://freedomboalkhali.com/wp-content/uploads/2024/08/image.jpg" height="100px" width="100px" class="rounded-circle" alt="Rounded Image">
                     <h1>JOY NANDI</h1>
-                    <p>Welcome to my portfolio website!</p>
+                    <p id="wm">Welcome to my portfolio website!</p>
+                    <div class="social">
+                        <ul class="contact-list">
+                            <li>
+                                <a href="tel:+8801894341990" class="contact-item phone">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:mrjoysdoc@gmail.com" class="contact-item email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/sreejoynandi" target="_blank" class="contact-item linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/sreejoynandy/" target="_blank" class="contact-item facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -60,7 +153,7 @@
 
     <main class="container my-5">
         <section id="contact" class="mb-5">
-            <h2 class="section-heading">Contact Information</h2>
+            <h2 class="section-heading">Contact Information</h2> <hr id="hl">
             <ul class="list-unstyled">
                 <li>
                     <i class="fas fa-phone"></i> 
@@ -76,30 +169,29 @@
                 <li>
                     <i class="fab fa-linkedin"></i> 
                     <strong>LinkedIn:</strong> 
-                    <a href="https://linkedin.com/in/joynandi" target="_blank">LinkedIn Profile</a>
+                    <a href="www.linkedin.com/in/sreejoynandi" target="_blank">LinkedIn Profile</a>
                 </li>
                 <li>
                     <i class="fab fa-facebook"></i> 
                     <strong>Facebook:</strong> 
-                    <a href="https://yourportfolio.com" target="_blank">Facebook Profile</a>
+                    <a href="https://www.facebook.com/sreejoynandy/" target="_blank">Facebook Profile</a>
                 </li>
             </ul>
         </section>
 
         <section id="summary" class="mb-5">
-            <h2 class="section-heading">Professional Summary</h2>
+            <h2 class="section-heading">Career Objective</h2> <hr>
             <p>Experienced ICT educator with six years of teaching at the Higher Secondary level. Published author of a Higher Secondary ICT textbook and proficient in a variety of digital tools and programming languages. Passionate about inspiring students to explore and excel in the field of technology.</p>
         </section>
 
         <section id="experience" class="mb-5">
-            <h2 class="section-heading">Teaching Experience</h2>
+            <h2 class="section-heading">Teaching Experience</h2> <hr>
             <h5 class="font-weight-bold text-success">ICT Teacher</h5>
             <p> Khitapchar Azizia Mahbudia Senior Madrasah</p>
             <h5>Duration:</h5> September 2022 – February 2023 <br> <br>
             <h5>Responsibilities:</h5>
             <ul>
                 <li>Designed and delivered ICT curricula for Higher Secondary students.</li>
-                <li>Integrated practical applications of MS Office, Google Workspace, WordPress, HTML, CSS, and JavaScript into lessons.</li>
                 <li>Provided students with hands-on experience through projects and assignments.</li>
             </ul>
             <h5>Achievements:</h5>
@@ -132,6 +224,7 @@
         </ul>
     </div>
 </div>
+<
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
@@ -142,7 +235,7 @@
         </section>
 
         <section id="publications" class="mb-5">
-            <h2 class="section-heading">Publications</h2>
+            <h2 class="section-heading">Publications</h2> <hr>
             <ul class="list-unstyled">
                 <li>
                     <strong>Title:</strong> Higher Secondary ICT<br>
@@ -155,7 +248,7 @@
         </section>
 
         <section id="education" class="mb-5">
-            <h2 class="section-heading">Education</h2>
+            <h2 class="section-heading">Education</h2> <hr>
             <ul class="list-unstyled">
                 <li>
                     <strong>Degree:</strong> Bachelor’s in History (Ongoing)<br>
@@ -166,7 +259,7 @@
         </section>
 
         <section id="skills" class="mb-5">
-            <h2 class="section-heading">Technical Skills</h2>
+            <h2 class="section-heading">Technical Skills</h2> <hr>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">
@@ -244,7 +337,8 @@
         </section>
 
         <section id="certifications" class="mb-5">
-            <h2 class="section-heading">Certifications</h2>
+            <h2 class="section-heading">Certifications</h2> <hr>
+
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">
@@ -290,7 +384,7 @@
         </section>
 
         <section id="development" class="mb-5">
-            <h2 class="section-heading">Development Seminars</h2>
+            <h2 class="section-heading">Development Seminars</h2> <hr>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4">
@@ -312,7 +406,7 @@
         </section>
 
         <section id="projects" class="mb-5">
-            <h2 class="section-heading">Projects</h2>
+            <h2 class="section-heading">Projects</h2> <hr>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">
@@ -342,7 +436,7 @@
         </section>
 
         <section id="volunteer" class="mb-5">
-            <h2 class="section-heading">Volunteer Experiences</h2>
+            <h2 class="section-heading">Volunteer Experiences</h2> <hr>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4">
@@ -366,6 +460,34 @@
 
     <footer class="bg-light text-center py-3">
         <p>&copy; 2024 JOY NANDI. All rights reserved.</p>
+        
+<div class="social">
+    <ul class="contact-list">
+        <li>
+            <a href="tel:+8801894341990" class="contact-item phone">
+                <i class="fas fa-phone"></i>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:mrjoysdoc@gmail.com" class="contact-item email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/sreejoynandi" target="_blank" class="contact-item linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/sreejoynandy/" target="_blank" class="contact-item facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none" style="fill: #FF5733;">
+            <path d="M0,96L1440,224L1440,320L0,320Z"></path>
+        </svg>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
